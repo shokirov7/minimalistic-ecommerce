@@ -4,6 +4,7 @@ import Title from "../../../components/title/Title";
 import { Context } from "../../../context/ThemeContext";
 import PrCard from "../../../components/proudcard/PrCard";
 import { shopFirestore } from "../../../firebase/config";
+import ProudSkelet from "../../../components/skeleton_proud/ProudSkelet";
 
 function Proud() {
   const [data, setData] = useState(null);
@@ -30,6 +31,7 @@ function Proud() {
     <div className="proud_section">
       <Title title={"Products we are proud of"} />
       <div className="proud_grid">
+        {pending && <ProudSkelet/>}
         {!pending &&
           data &&
           data

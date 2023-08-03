@@ -1,0 +1,79 @@
+/* Skeleton CSS */
+@keyframes loading {
+  to {
+    background-position-x: -20%;
+  }
+}
+.skeleton {
+  background: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 60%
+    )
+    #ededed;
+  overflow: hidden;
+  background-size: 200% 100%;
+  background-position-x: 180%;
+  border-radius: 5px;
+}
+.skeleton::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 60%
+    )
+    #ededed;
+  background-size: 200% 100%;
+  background-position-x: 180%;
+  animation: 1s loading ease-in-out infinite;
+}
+.skeleton:nth-child(2) {
+  width: 70%;
+}
+.skeleton:nth-child(3) {
+  width: 50%;
+}
+/* Not interesting CSS */
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2%;
+  padding: 3rem 0;
+  width: 100%;
+  height: 35rem;
+  margin-bottom: 1.5rem;
+}
+.container > .info {
+  display: grid;
+  grid-template-rows: 160px 50px 60px;
+  grid-row-gap: 2rem;
+  padding: 5rem 0 20px 0;
+}
+
+@media (max-width: 850px) {
+  .skeleton:not(.info .skeleton):before {
+    height: 35rem;
+  }
+  .container {
+    height: auto;
+    padding: 0;
+    grid-template-columns: 1fr;
+  }
+  .skeleton:nth-child(2) {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .skeleton:nth-child(3) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

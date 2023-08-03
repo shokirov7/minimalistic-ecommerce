@@ -50,10 +50,3 @@
 .slider_grid .proud_card_img img {
   height: 210px;
 }
-
-@media (max-width: 570px) {
-  .slider {
-    max-width: 1160px;
-    padding: 0;
-  }
-}

@@ -6,6 +6,7 @@ import { NavLink, useParams } from "react-router-dom";
 import More from "./more_details/More";
 import Loader from "../../components/loader/Loader";
 import Slider from "../../components/slider/Slider";
+import ProdSkelet from "../../components/product_skelet/ProdSkelet";
 
 function Product() {
   const { id } = useParams();
@@ -51,7 +52,7 @@ function Product() {
   };
   return (
     <div className="product_id">
-      {pending && <Loader />}
+      {pending && <ProdSkelet/> }
       {data && (
         <div className="product_info_holder">
           <div className="product_details">

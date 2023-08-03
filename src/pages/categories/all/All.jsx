@@ -5,6 +5,7 @@ import { shopFirestore } from "../../../firebase/config";
 import CatTop from "../../../components/categories_top/CatTop";
 import Loader from "../../../components/loader/Loader";
 import PrCard from "../../../components/proudcard/PrCard";
+import ProudSkelet from "../../../components/skeleton_proud/ProudSkelet";
 
 function All() {
   const [data, setData] = useState(null);
@@ -37,22 +38,24 @@ function All() {
   return (
     <div className="categ_all">
       <CatTop title={"All"} />
-      {pending && <Loader />}
       <div className="categ_all_holder">
+        {pending && <ProudSkelet />}
         {alo && <Loader />}
-        {!alo &&
+        {!pending &&
           data &&
-          data.sort((a, b) => a.id - b.id).map((item) => {
-            return (
-              <PrCard
-                key={item.id}
-                img={item.img1}
-                title={item.title}
-                price={item.price}
-                id={item.id}
-              />
-            );
-          })}
+          data
+            .sort((a, b) => a.id - b.id)
+            .map((item) => {
+              return (
+                <PrCard
+                  key={item.id}
+                  img={item.img1}
+                  title={item.title}
+                  price={item.price}
+                  id={item.id}
+                />
+              );
+            })}
       </div>
     </div>
   );

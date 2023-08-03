@@ -4,6 +4,7 @@ import { shopFirestore } from "../../../firebase/config";
 import CatTop from "../../../components/categories_top/CatTop";
 import Loader from "../../../components/loader/Loader";
 import PrCard from "../../../components/proudcard/PrCard";
+import ProudSkelet from "../../../components/skeleton_proud/ProudSkelet";
 
 function Lamps() {
   const [data, setData] = useState(null);
@@ -37,8 +38,9 @@ function Lamps() {
     <div className="categ_all">
       <CatTop title={"Lamps"} />
       <div className="categ_all_holder">
+        {pending && <ProudSkelet />}
         {alo && <Loader />}
-        {!alo &&
+        {!pending &&
           data &&
           data.map((item) => {
             return (

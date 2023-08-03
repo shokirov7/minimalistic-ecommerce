@@ -7,6 +7,7 @@ import { Context } from "../../context/ThemeContext";
 import { shopFirestore } from "../../firebase/config";
 import PrCard from "../proudcard/PrCard";
 import Title from "../title/Title";
+import SliderSkelet from "../skeleton_slider/SliderSkelet";
 
 function Slider() {
   const [data, setData] = useState(null);
@@ -60,6 +61,7 @@ function Slider() {
         </div>
       </div>
       <div className="slider_grid" ref={sliderRef}>
+        {pending && <SliderSkelet />}
         {!pending &&
           data &&
           data
