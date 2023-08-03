@@ -20,11 +20,11 @@
   border: none;
   transition: background 0.1s ease;
 }
-.slider_buttons button svg{
+.slider_buttons button svg {
   font-size: 1rem;
 }
-.slider_buttons button:hover{
-    background: #000;
+.slider_buttons button:hover {
+  background: #000;
 }
 .slider_top .title {
   margin: 0;
@@ -49,4 +49,11 @@
 }
 .slider_grid .proud_card_img img {
   height: 210px;
+}
+
+@media (max-width: 570px) {
+  .slider {
+    max-width: 1160px;
+    padding: 0;
+  }
 }

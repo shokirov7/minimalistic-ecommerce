@@ -1,8 +1,8 @@
 .navigation {
-  max-width: 1200px;
+  max-width: 1160px;
   margin: 0 auto 70px auto;
-  padding: 0 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
   justify-content: center;
@@ -17,4 +17,10 @@
 }
 .navigation a:hover {
   border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 391px) {
+  .navigation a{
+    padding: 6px 12px;
+  }
 }

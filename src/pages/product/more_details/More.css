@@ -21,3 +21,24 @@
   font-family: blink-reg;
   font-size: 16.5px;
 }
+
+@media (max-width: 850px) {
+  .prod_more_grid {
+    margin: 4rem auto 0 auto;
+  }
+}
+
+@media (max-width: 570px) {
+  .prod_more_grid {
+    display: block;
+  }
+  .prod_more{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    padding: 20px;
+  }
+  .prod_more_title {
+    margin-bottom: 0px;
+  }
+}
