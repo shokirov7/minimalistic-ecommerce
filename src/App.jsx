@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/home/Home";
 import Product from "./pages/product/Product";
@@ -32,6 +32,7 @@ function App() {
           <Route path="/categories/chairs" element={<Chairs />} />
           <Route path="/categories/skin-care" element={<Skin />} />
           <Route path="/categories/product/:id" element={<Product />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
       </BrowserRouter>
