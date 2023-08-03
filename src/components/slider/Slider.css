@@ -1,0 +1,52 @@
+.slider {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+.slider_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 43px;
+}
+.slider_buttons button {
+  display: flex;
+  width: 40px;
+  padding: 12.5px 13.56px 12.5px 12.44px;
+  justify-content: center;
+  align-items: center;
+  background: #373737;
+  cursor: pointer;
+  border: none;
+  transition: background 0.1s ease;
+}
+.slider_buttons button svg{
+  font-size: 1rem;
+}
+.slider_buttons button:hover{
+    background: #000;
+}
+.slider_top .title {
+  margin: 0;
+}
+.slider_buttons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.slider_grid {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  overflow-x: hidden;
+}
+.slider_grid .proud_card {
+  width: 216px;
+}
+.slider_grid .proud_card_title {
+  font-size: 16px;
+}
+.slider_grid .proud_card_img img {
+  height: 210px;
+}

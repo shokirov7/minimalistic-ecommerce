@@ -1,0 +1,26 @@
+.all_title {
+  position: relative;
+  text-align: center;
+  color: #000;
+  font-family: blink-bold;
+  font-size: 27px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.back_nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+.back_nav svg{
+  font-size: 18px;
+  color: #000;
+}
+.back_nav p {
+  color: #000;
+  font-family: blink-reg;
+  font-size: 16px;
+  text-transform: none;
+}

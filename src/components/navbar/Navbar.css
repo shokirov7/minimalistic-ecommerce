@@ -1,0 +1,108 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 777;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.23);
+  scroll-behavior: smooth;
+  transition: transform 0.3s ease;
+}
+.nav_content {
+  max-width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  transition: height 0.1s linear;
+}
+.nav_content.sticky {
+  height: 80px;
+}
+.nav_logo a img {
+  width: 85px;
+  height: 85px;
+}
+.nav_right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.nav_right_right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.nav_right a {
+  text-decoration: none;
+  color: #000;
+  font-family: blink-reg;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.nav_right a:hover {
+  text-decoration: underline;
+}
+.nav_cart {
+  cursor: pointer;
+}
+.nav_cart svg {
+  font-size: 18px;
+}
+.nav_mini_menu_btn {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.nav_mini_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2222;
+  width: 100%;
+  padding: 3rem 1.5rem;
+  height: 100svh;
+  background-color: #f3f3f3;
+}
+.nav_mini_menu_close{
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+.nav_mini_menu_close svg{
+  font-size: 1.5rem;
+}
+.mini_menu_holder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-direction: column;
+}
+.mini_menu_holder a{
+  font-size: 2rem;
+  color: #000;
+  font-family: blink-reg;
+  text-transform: uppercase;
+}
+.mini_menu_holder a:hover{
+  text-decoration: underline;
+}
+/* Cart style */
+
+@media (max-width: 600px) {
+  .nav_right_right {
+    display: none;
+  }
+  .nav_cart svg {
+    font-size: 1.5rem;
+  }
+  .nav_mini_menu_btn {
+    display: block;
+  }
+}

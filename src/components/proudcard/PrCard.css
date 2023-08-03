@@ -1,0 +1,33 @@
+.proud_card {
+  border: 2px solid rgba(0,0,0,.205);
+  transition: all .15s ease-in;
+}
+.proud_card:hover{
+  border: 2px solid rgba(0, 0, 0, .7);
+}
+.proud_card_img img{
+  width: 100%;
+}
+.proud_card_text {
+  padding: 10px;
+}
+.proud_card_title {
+  color: #000;
+  font-family: blink-reg;
+  font-size: 17px;
+  margin-bottom: 14px;
+}
+.proud_card_price {
+  color: #000;
+  font-family: blink-semi;
+  font-size: 22px;
+}
+
+@media (max-width: 430px) {
+  .proud_card_title{
+    font-size: 26px;
+  }
+  .proud_card_price{
+    font-size: 28px;
+  }
+}

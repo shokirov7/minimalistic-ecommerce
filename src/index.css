@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  outline: none !important;
+}
+
+@font-face {
+  font-family: blink-reg;
+  src: url(./assets/fonts/Blinker-Regular.ttf);
+}
+@font-face {
+  font-family: blink-semi;
+  src: url(./assets/fonts/Blinker-SemiBold.ttf);
+}
+@font-face {
+  font-family: blink-bold;
+  src: url(./assets/fonts/Blinker-Bold.ttf);
+}
+@font-face {
+  font-family: arial-reg;
+  src: url(./assets/fonts/arial_reg.ttf);
+}
+@font-face {
+  font-family: arial-bold;
+  src: url(./assets/fonts/ofont.ru_Arial.ttf);
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}

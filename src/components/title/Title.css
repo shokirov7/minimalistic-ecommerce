@@ -1,0 +1,19 @@
+.title {
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-top: 130px;
+  color: #000;
+  font-family: blink-semi;
+  font-size: 26px;
+}
+
+@media (max-width: 750px) {
+  .title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 430px) {
+  .title {
+    font-size: calc(24px + (30 - 24) * ((100vw - 320px) / (430 - 320)));
+  }
+}

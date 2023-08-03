@@ -1,0 +1,23 @@
+.prod_more_grid {
+  max-width: 1160px;
+  margin: 8rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
+}
+.prod_more {
+  height: 100px;
+  background: #e5e5e5;
+  padding: 20px;
+}
+.prod_more_title {
+  color: #000;
+  font-family: blink-semi;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.prod_more_desc {
+  color: #000;
+  font-family: blink-reg;
+  font-size: 16.5px;
+}
