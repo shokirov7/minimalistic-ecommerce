@@ -70,6 +70,7 @@
     width: 80%;
     margin: 0 auto;
     flex-direction: column;
+    margin-bottom: 2rem;
   }
   .cart_item_img{
     width: 100%;
@@ -106,5 +107,10 @@
 @media (max-width: 450px){
   .cart_item{
     width: 85%;
+  }
+}
+@media (max-width: 376px) {
+  .cart_item{
+    width: 70%;
   }
 }
