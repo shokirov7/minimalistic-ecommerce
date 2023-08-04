@@ -60,38 +60,44 @@
   cursor: pointer;
 }
 .nav_mini_menu {
+  position: relative;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2222;
   width: 100%;
   padding: 3rem 1.5rem;
-  height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  height: 100%;
   background-color: #f3f3f3;
+  translate: 100% 0%;
+  transition: translate 0.3s;
+}
+.nav_mini_menu.active{
+  translate: 0;
+  transition: translate 0.3s;
 }
 .nav_mini_menu_close{
-  display: flex;
-  justify-content: end;
+  position: absolute;
+  top: 45px;
+  right: 20px;
   cursor: pointer;
 }
 .nav_mini_menu_close svg{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
-.mini_menu_holder {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-direction: column;
-}
-.mini_menu_holder a{
+.mini_menu_link a{
   font-size: 2rem;
   color: #000;
   font-family: blink-reg;
   text-transform: uppercase;
 }
-.mini_menu_holder a:hover{
+.mini_menu_link a:hover{
   text-decoration: underline;
 }
 .cart_item_number {

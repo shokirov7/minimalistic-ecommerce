@@ -104,35 +104,42 @@ function Navbar() {
           </div>
         </div>
         <Cart isCartOpened={isCartOpened} setIsCartOpened={setIsCartOpened} />
-        {isMenu && (
-          <div className="nav_mini_menu">
-            <div
-              className="nav_mini_menu_close"
-              onClick={() => {
-                setIsMenu(false);
-              }}
-            >
-              <FontAwesomeIcon icon={faXmark} style={{ color: "#000000" }} />
-            </div>
-            <div className="mini_menu_holder">
-              <div onClick={() => {
-                setIsMenu(false)
-              }} className="mini_menu_link">
-                <NavLink to="/categories/all">categories</NavLink>
-              </div>
-              <div onClick={() => {
-                setIsMenu(false)
-              }} className="mini_menu_link">
-                <NavLink to="/categories/lamps">lamps</NavLink>
-              </div>
-              <div onClick={() => {
-                setIsMenu(false)
-              }} className="mini_menu_link">
-                <NavLink to="/categories/product/19">product page</NavLink>
-              </div>
-            </div>
+
+        <div className={isMenu ? "nav_mini_menu active" : "nav_mini_menu"}>
+          <div
+            className="nav_mini_menu_close"
+            onClick={() => {
+              setIsMenu(false);
+            }}
+          >
+            <FontAwesomeIcon icon={faXmark} style={{ color: "#000000" }} />
           </div>
-        )}
+
+          <div
+            onClick={() => {
+              setIsMenu(false);
+            }}
+            className="mini_menu_link"
+          >
+            <NavLink to="/categories/all">categories</NavLink>
+          </div>
+          <div
+            onClick={() => {
+              setIsMenu(false);
+            }}
+            className="mini_menu_link"
+          >
+            <NavLink to="/categories/lamps">lamps</NavLink>
+          </div>
+          <div
+            onClick={() => {
+              setIsMenu(false);
+            }}
+            className="mini_menu_link"
+          >
+            <NavLink to="/categories/product/19">product page</NavLink>
+          </div>
+        </div>
       </div>
     </div>
   );

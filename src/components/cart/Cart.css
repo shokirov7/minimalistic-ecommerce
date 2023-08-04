@@ -1,6 +1,7 @@
 .cart_body {
   position: fixed;
-  display: none;
+  display: block;
+
   top: 0;
   z-index: 800;
   left: 0;
@@ -11,12 +12,13 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
+
 }
 
 .cart_body.active {
-  display: block;
   opacity: 1;
   pointer-events: auto;
+  transition: opacity 0.3s ease;
 }
 
 .cart_holder {
@@ -26,9 +28,9 @@
   position: fixed;
   z-index: -1;
   top: 0;
-  right: 0;
   transform: translateX(100%);
   padding: 30px 25px;
+  right: 0;
   transition: transform 0.3s ease;
 }
 
@@ -97,7 +99,6 @@
 .cart_total_title {
   font-family: blink-semi;
   font-size: 1.6rem;
-  /* margin-bottom: 5px; */
 }
 .cart_total_bottom {
   display: flex;
