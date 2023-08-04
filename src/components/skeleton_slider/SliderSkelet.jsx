@@ -4,95 +4,95 @@ import "./SliderSkelet.css";
 function SliderSkelet() {
   return (
     <>
-      <div class="slider_skelet_card slider_loading">
-        <div class="slider_skelet_card_image"></div>
-        <div class="slider_skelet_card_content">
+      <div className="slider_skelet_card slider_loading">
+        <div className="slider_skelet_card_image"></div>
+        <div className="slider_skelet_card_content">
           <h4></h4>
-          <div class="slider_skelet_card_description"></div>
+          <div className="slider_skelet_card_description"></div>
         </div>
       </div>
-      <div class="slider_skelet_card slider_loading">
-        <div class="slider_skelet_card_image"></div>
-        <div class="slider_skelet_card_content">
+      <div className="slider_skelet_card slider_loading">
+        <div className="slider_skelet_card_image"></div>
+        <div className="slider_skelet_card_content">
           <h4></h4>
-          <div class="slider_skelet_card_description"></div>
+          <div className="slider_skelet_card_description"></div>
         </div>
       </div>
-      <div class="slider_skelet_card slider_loading">
-        <div class="slider_skelet_card_image"></div>
-        <div class="slider_skelet_card_content">
+      <div className="slider_skelet_card slider_loading">
+        <div className="slider_skelet_card_image"></div>
+        <div className="slider_skelet_card_content">
           <h4></h4>
-          <div class="slider_skelet_card_description"></div>
+          <div className="slider_skelet_card_description"></div>
         </div>
       </div>
-      <div class="slider_skelet_card slider_loading">
-        <div class="slider_skelet_card_image"></div>
-        <div class="slider_skelet_card_content">
+      <div className="slider_skelet_card slider_loading">
+        <div className="slider_skelet_card_image"></div>
+        <div className="slider_skelet_card_content">
           <h4></h4>
-          <div class="slider_skelet_card_description"></div>
+          <div className="slider_skelet_card_description"></div>
         </div>
       </div>
-      <div class="slider_skelet_card slider_loading">
-        <div class="slider_skelet_card_image"></div>
-        <div class="slider_skelet_card_content">
+      <div className="slider_skelet_card slider_loading">
+        <div className="slider_skelet_card_image"></div>
+        <div className="slider_skelet_card_content">
           <h4></h4>
-          <div class="slider_skelet_card_description"></div>
+          <div className="slider_skelet_card_description"></div>
         </div>
       </div>
-      <div class="slider_skelet_card slider_loading">
-        <div class="slider_skelet_card_image"></div>
-        <div class="slider_skelet_card_content">
+      <div className="slider_skelet_card slider_loading">
+        <div className="slider_skelet_card_image"></div>
+        <div className="slider_skelet_card_content">
           <h4></h4>
-          <div class="slider_skelet_card_description"></div>
+          <div className="slider_skelet_card_description"></div>
         </div>
       </div>
-      <div class="slider_skelet_card slider_loading">
-        <div class="slider_skelet_card_image"></div>
-        <div class="slider_skelet_card_content">
+      <div className="slider_skelet_card slider_loading">
+        <div className="slider_skelet_card_image"></div>
+        <div className="slider_skelet_card_content">
           <h4></h4>
-          <div class="slider_skelet_card_description"></div>
+          <div className="slider_skelet_card_description"></div>
         </div>
       </div>
-      <div class="slider_skelet_card slider_loading">
-        <div class="slider_skelet_card_image"></div>
-        <div class="slider_skelet_card_content">
+      <div className="slider_skelet_card slider_loading">
+        <div className="slider_skelet_card_image"></div>
+        <div className="slider_skelet_card_content">
           <h4></h4>
-          <div class="slider_skelet_card_description"></div>
+          <div className="slider_skelet_card_description"></div>
         </div>
       </div>
-      <div class="slider_skelet_card slider_loading">
-        <div class="slider_skelet_card_image"></div>
-        <div class="slider_skelet_card_content">
+      <div className="slider_skelet_card slider_loading">
+        <div className="slider_skelet_card_image"></div>
+        <div className="slider_skelet_card_content">
           <h4></h4>
-          <div class="slider_skelet_card_description"></div>
+          <div className="slider_skelet_card_description"></div>
         </div>
       </div>
-      <div class="slider_skelet_card slider_loading">
-        <div class="slider_skelet_card_image"></div>
-        <div class="slider_skelet_card_content">
+      <div className="slider_skelet_card slider_loading">
+        <div className="slider_skelet_card_image"></div>
+        <div className="slider_skelet_card_content">
           <h4></h4>
-          <div class="slider_skelet_card_description"></div>
+          <div className="slider_skelet_card_description"></div>
         </div>
       </div>
-      <div class="slider_skelet_card slider_loading">
-        <div class="slider_skelet_card_image"></div>
-        <div class="slider_skelet_card_content">
+      <div className="slider_skelet_card slider_loading">
+        <div className="slider_skelet_card_image"></div>
+        <div className="slider_skelet_card_content">
           <h4></h4>
-          <div class="slider_skelet_card_description"></div>
+          <div className="slider_skelet_card_description"></div>
         </div>
       </div>
-      <div class="slider_skelet_card slider_loading">
-        <div class="slider_skelet_card_image"></div>
-        <div class="slider_skelet_card_content">
+      <div className="slider_skelet_card slider_loading">
+        <div className="slider_skelet_card_image"></div>
+        <div className="slider_skelet_card_content">
           <h4></h4>
-          <div class="slider_skelet_card_description"></div>
+          <div className="slider_skelet_card_description"></div>
         </div>
       </div>
-      <div class="slider_skelet_card slider_loading">
-        <div class="slider_skelet_card_image"></div>
-        <div class="slider_skelet_card_content">
+      <div className="slider_skelet_card slider_loading">
+        <div className="slider_skelet_card_image"></div>
+        <div className="slider_skelet_card_content">
           <h4></h4>
-          <div class="slider_skelet_card_description"></div>
+          <div className="slider_skelet_card_description"></div>
         </div>
       </div>
     </>

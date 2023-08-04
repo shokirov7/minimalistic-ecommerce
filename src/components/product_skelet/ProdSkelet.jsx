@@ -3,12 +3,12 @@ import './ProdSkelet.css'
 
 function ProdSkelet() {
   return (
-    <div class="container">
-      <div class="skeleton"></div>
-      <div class="info">
-        <div class="skeleton"></div>
-        <div class="skeleton"></div>
-        <div class="skeleton"></div>
+    <div className="container">
+      <div className="skeleton"></div>
+      <div className="info">
+        <div className="skeleton"></div>
+        <div className="skeleton"></div>
+        <div className="skeleton"></div>
       </div>
     </div>
   );

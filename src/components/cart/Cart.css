@@ -129,3 +129,13 @@
     width: 100%;
   }
 }
+@media (max-width: 435px){
+  .cart_total_title{
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+  .cart_total_bottom{
+    flex-direction: column;
+    gap: .5rem;
+  }
+}

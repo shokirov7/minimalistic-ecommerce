@@ -24,3 +24,8 @@
     padding: 6px 12px;
   }
 }
+@media (max-width: 376px) {
+  .navigation a{
+    padding: 6px 11px;
+  }
+}
