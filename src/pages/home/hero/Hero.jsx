@@ -9,7 +9,7 @@ function Hero() {
         <h2 className="hero_block_title">Live Comfortably</h2>
       </Link>
       <Link to="/categories/skin-care" className="hero_block">
-        <h2 className="hero_block_title">Skincare</h2>
+        <h2 className="hero_block_title">HW Skincare</h2>
       </Link>
       <Link to="/categories/kitchen" className="hero_block">
         <h2 className="hero_block_title">Kitchen</h2>
