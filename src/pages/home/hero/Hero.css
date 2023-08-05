@@ -48,7 +48,7 @@
   background-image: url(../../../assets/img/img4.png);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 751px) {
   .hero {
     grid-template-columns: 1fr 1fr;
   }
