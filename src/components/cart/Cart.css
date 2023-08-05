@@ -131,12 +131,13 @@
 @media (max-width: 435px) {
   .cart_body,
   .cart_holder {
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
-    transition: all 0.3s;
+    transition: height 0.3s;
   }
   .empty_cart{
-    height: 100vh;
+    height: 100dvh;
+    transition: height .3s;
   }
   .cart_total_title {
     text-align: center;

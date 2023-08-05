@@ -73,7 +73,7 @@
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  height: 100svh;
+  height: 100%;
   background-color: #f3f3f3;
   translate: 100% 0%;
   transition: translate 0.3s;
@@ -130,5 +130,12 @@
   }
   .nav_mini_menu_btn {
     display: block;
+  }
+}
+
+@media (max-width: 435px) {
+  .nav_mini_menu{
+    height: 100dvh;
+    transition: height .3s;
   }
 }
