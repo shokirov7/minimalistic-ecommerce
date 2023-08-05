@@ -28,7 +28,7 @@ function Cart({ isCartOpened, setIsCartOpened }) {
     >
       <div className={`cart_holder ${isCartOpened ? "active" : ""}`}>
         <div className="cart_top">
-          <div className="cart_top_title">You Shopping Cart ({countCart})</div>
+          <div className="cart_top_title">Your Shopping Cart ({countCart})</div>
           <div
             className="cart_top_close"
             onClick={() => {
