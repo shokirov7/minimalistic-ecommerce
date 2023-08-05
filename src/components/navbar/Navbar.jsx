@@ -8,6 +8,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Context } from "../../context/ThemeContext";
 import CartItem from "../cart_item/CartItem";
 import { shopFirestore } from "../../firebase/config";
+import logo from '../../assets/img/logo.png'
 import Cart from "../cart/Cart";
 
 function Navbar() {
@@ -63,7 +64,7 @@ function Navbar() {
         <div className="nav_logo" onClick={scrollToTop}>
           <NavLink to="/">
             <img
-              src="https://minimalist-e-commerce.vercel.app/static/media/newlogo2.913a6896d5b7d39d8bf6.png"
+              src={logo}
               alt=""
             />
           </NavLink>
