@@ -71,9 +71,3 @@
     width: 80%;
   }
 }
-
-@media (max-width: 350px) {
-  .footer_form button {
-    padding: 6px 75px;
-  }
-}
