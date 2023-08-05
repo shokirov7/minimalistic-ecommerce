@@ -5,10 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { RiShoppingCartLine } from "react-icons/ri";
 import { Context } from "../../context/ThemeContext";
 import CartItem from "../cart_item/CartItem";
 import { shopFirestore } from "../../firebase/config";
-import logo from '../../assets/img/logo.png'
+import logo from "../../assets/img/logo.png";
 import Cart from "../cart/Cart";
 
 function Navbar() {
@@ -63,16 +64,14 @@ function Navbar() {
       <div className={isSticky ? "nav_content sticky" : "nav_content"}>
         <div className="nav_logo" onClick={scrollToTop}>
           <NavLink to="/">
-            <img
-              src={logo}
-              alt=""
-            />
+            <img src={logo} alt="" />
           </NavLink>
         </div>
         <div className="nav_right">
           <div className="nav_right_right">
             <NavLink to="/categories/all">categories</NavLink>
-            <NavLink to="/categories/product/19">product page</NavLink>
+            <NavLink to="/categories/lamps">lamps</NavLink>
+            <NavLink to="/categories/furniture">furniture</NavLink>
           </div>
           <div
             className="nav_cart"
@@ -90,10 +89,11 @@ function Navbar() {
                 {countCart}
               </div>
             )}
-            <FontAwesomeIcon
+            {/* <FontAwesomeIcon
               icon={faCartShopping}
               style={{ color: "#000000" }}
-            />
+            /> */}
+            <RiShoppingCartLine/>
           </div>
           <div
             className="nav_mini_menu_btn"
@@ -138,7 +138,7 @@ function Navbar() {
             }}
             className="mini_menu_link"
           >
-            <NavLink to="/categories/product/19">product page</NavLink>
+            <NavLink to="/categories/furniture">furniture</NavLink>
           </div>
         </div>
       </div>

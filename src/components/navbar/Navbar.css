@@ -23,25 +23,25 @@
   height: 80px;
 }
 .nav_logo a img {
-  width: 85px;
-  height: 85px;
+  width: 120px;
+  height: 48px;
 }
 .nav_right {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 35px;
 }
 .nav_right_right {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 35px;
 }
 .nav_right a {
   text-decoration: none;
   color: #000;
   font-family: blink-reg;
-  font-size: 18px;
+  font-size: 17px;
   text-transform: uppercase;
 }
 .nav_right a:hover {
@@ -52,7 +52,7 @@
   cursor: pointer;
 }
 .nav_cart svg {
-  font-size: 18px;
+  font-size: 24px;
 }
 .nav_mini_menu_btn {
   display: none;
