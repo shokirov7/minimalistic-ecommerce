@@ -71,7 +71,7 @@ function Navbar() {
           <div className="nav_right_right">
             <NavLink to="/categories/all">categories</NavLink>
             <NavLink to="/categories/lamps">lamps</NavLink>
-            <NavLink to="/categories/furniture">furniture</NavLink>
+            <NavLink to="/categories/furnitures">furniture</NavLink>
           </div>
           <div
             className="nav_cart"

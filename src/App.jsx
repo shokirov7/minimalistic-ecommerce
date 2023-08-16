@@ -2,20 +2,30 @@ import React, { useContext, useEffect, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Context } from "./context/ThemeContext";
 import "./App.css";
-const Home = lazy(() => import("./pages/home/Home"));
-const Product = lazy(() => import("./pages/product/Product"));
-const Navbar = lazy(() => import("./components/navbar/Navbar"));
-const Footer = lazy(() => import("./components/footer/Footer"));
-const Loader = lazy(() => import("./components/loader/Loader"));
-const All = lazy(() => import("./pages/categories/all/All"));
-const Furniture = lazy(() => import("./pages/categories/furniture/Furniture"));
-const Electronics = lazy(() =>
-  import("./pages/categories/electronics/Electronics")
-);
-const Lamps = lazy(() => import("./pages/categories/lamps/Lamps"));
-const Kitchen = lazy(() => import("./pages/categories/kitchen/Kitchen"));
-const Chairs = lazy(() => import("./pages/categories/chairs/Chairs"));
-const Skin = lazy(() => import("./pages/categories/skin/Skin"));
+import All from "./pages/categories/all/All";
+import Furniture from "./pages/categories/furniture/Furniture";
+import Electronics from "./pages/categories/electronics/Electronics";
+import Lamps from "./pages/categories/lamps/Lamps";
+import Chairs from "./pages/categories/chairs/Chairs";
+import Skin from "./pages/categories/skin/Skin";
+import Kitchen from "./pages/categories/kitchen/Kitchen";
+import Home from "./pages/home/Home";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import Product from "./pages/product/Product";
+// const Home = lazy(() => import("./pages/home/Home"));
+// const Product = lazy(() => import("./pages/product/Product"));
+// const Navbar = lazy(() => import("./components/navbar/Navbar"));
+// const Footer = lazy(() => import("./components/footer/Footer"));
+// const Loader = lazy(() => import("./components/loader/Loader"));
+// const All = lazy(() => import("./pages/categories/all/All"));
+// const Furniture = lazy(() => import("./pages/categories/furniture/Furniture"));
+// const Electronics = lazy(() => import("./pages/categories/electronics/Electronics")
+// );
+// const Lamps = lazy(() => import("./pages/categories/lamps/Lamps"));
+// const Kitchen = lazy(() => import("./pages/categories/kitchen/Kitchen"));
+// const Chairs = lazy(() => import("./pages/categories/chairs/Chairs"));
+// const Skin = lazy(() => import("./pages/categories/skin/Skin"));
 
 function App() {
   const { pending } = useContext(Context);
@@ -24,7 +34,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
-        <Suspense fallback={<Loader />}>
+        {/* <Suspense fallback={<Loader />}> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/categories/all" element={<All />} />
@@ -37,7 +47,7 @@ function App() {
             <Route path="/categories/product/:id" element={<Product />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
-        </Suspense>
+        {/* </Suspense> */}
         <Footer />
       </BrowserRouter>
     </div>

@@ -19,9 +19,9 @@
   justify-content: space-between;
   transition: height 0.1s linear;
 }
-.nav_content.sticky {
+/* .nav_content.sticky {
   height: 80px;
-}
+} */
 .nav_logo a img {
   width: 120px;
   height: 48px;

@@ -3,6 +3,13 @@ import "./Footer.css";
 import { NavLink } from "react-router-dom";
 
 function Footer() {
+  const handleNavLinkClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <div className="footer">
       <div className="footer_top">
@@ -14,12 +21,12 @@ function Footer() {
       </div>
       <div className="footer_bottom">
         <div className="footer_links">
-          <NavLink>About</NavLink>
-          <NavLink>Store locator</NavLink>
-          <NavLink>FAQs</NavLink>
-          <NavLink>News</NavLink>
-          <NavLink>Careers</NavLink>
-          <NavLink>Contact Us</NavLink>
+          <NavLink onClick={handleNavLinkClick} to="">About</NavLink>
+          <NavLink onClick={handleNavLinkClick} to="">Store locator</NavLink>
+          <NavLink onClick={handleNavLinkClick} to="">FAQs</NavLink>
+          <NavLink onClick={handleNavLinkClick} to="">News</NavLink>
+          <NavLink onClick={handleNavLinkClick} to="">Careers</NavLink>
+          <NavLink onClick={handleNavLinkClick} to="">Contact Us</NavLink>
         </div>
         <div className="footer_copyright">Recreated by Shokirov Amirxon</div>
       </div>
